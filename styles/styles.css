@@ -29,6 +29,8 @@ main {
     max-width: 840px;
 }
 
+/* Image contained in main (temple) */
+
 main img {
     width: 150px;
     height: auto;
