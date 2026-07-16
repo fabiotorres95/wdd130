@@ -1,8 +1,8 @@
 :root {
     --padding: 2px;
-    --height: auto;
+    /* --height: auto; */
     --border: 1px solid black;
-    --text-align: center;
+    /* --text-align: center; */
 }
 
 * {
@@ -34,7 +34,7 @@ h1 {
 
 img {
     width: 150px;
-    height: var(--height);
+    height: auto;
     border: var(--border);
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
@@ -52,7 +52,7 @@ main {
 
 main img {
     width: 150px;
-    height: var(--height);
+    height: auto;
     border: #333;
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
@@ -71,13 +71,13 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: var(--text-align);
+    text-align: center;
     position: relative;
 }
 
 aside img {
     width: 200px;
-    height: var(--height);
+    height: auto;
 }
 
 aside h2 {
@@ -90,7 +90,7 @@ aside h2 {
 footer {
     margin-top: 15px;
     border-top: var(--border);
-    text-align: var(--text-align);
+    text-align: center;
 }
 
 /* Class Selectors */
