@@ -31,10 +31,32 @@ footer {
     margin: 0 auto;
 }
 
-h1,
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    width: 20%;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
 h2 {
+
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    background-color: var(--primary-color);
 }
 
 nav,
@@ -45,6 +67,34 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
+article {
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent2-color);
+}
+
+.socialmedia a,
+header a {
     text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 5%;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
 }
