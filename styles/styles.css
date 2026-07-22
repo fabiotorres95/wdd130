@@ -1,8 +1,8 @@
 :root {
     --padding: 2px;
-    /* --height: auto; */
+    --height: var(--height);
     --border: 1px solid black;
-    /* --text-align: center; */
+    --text-align: center;
 }
 
 * {
@@ -10,6 +10,13 @@
     padding: 0;
     box-sizing: border-box;
 
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 body {
@@ -20,21 +27,28 @@ body {
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: darkblue;
 }
 
 img {
     width: 150px;
-    height: auto;
+    height: var(--height);
     border: var(--border);
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
@@ -46,13 +60,15 @@ p {
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 /* Image contained in main (temple) */
 
 main img {
     width: 150px;
-    height: auto;
+    height: var(--height);
     border: #333;
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
@@ -71,13 +87,15 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 
 aside h2 {
@@ -90,7 +108,7 @@ aside h2 {
 footer {
     margin-top: 15px;
     border-top: var(--border);
-    text-align: center;
+    text-align: var(--text-align);
 }
 
 /* Class Selectors */
@@ -104,4 +122,9 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
