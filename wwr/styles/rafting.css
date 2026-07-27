@@ -34,6 +34,9 @@ footer {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    align-items: center;
 }
 
 header img {
@@ -42,6 +45,16 @@ header img {
 
 header a {
     text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    flex: 1 1 auto;
+    width: 50px;
 }
 
 h1 {
@@ -77,6 +90,16 @@ article {
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent2-color);
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+figure img {
+    width: 25%;
 }
 
 .socialmedia a {
