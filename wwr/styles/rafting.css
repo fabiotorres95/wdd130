@@ -21,7 +21,8 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -125,4 +126,21 @@ figure img {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+/* contact classes */
+
+.company-info {
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.company-info h3 {
+    font-size:2.3rem;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    margin: 4px 0;
+    font-size: 1rem;
 }
