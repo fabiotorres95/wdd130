@@ -3,7 +3,7 @@
     --secondary-color: #f7c297;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -28,7 +28,6 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
     display: grid;
     grid-template-columns: 600px 1fr;
     align-items: center;
@@ -38,181 +37,180 @@ header img {
     width: 20%;
 }
 
-header a {
-    text-decoration: none;
-}
-
-ul {
+header nav ul {
     display: flex;
     list-style: none;
 }
 
-li {
-    flex: 1 1 auto;
-    width: 50px;
+header nav li {
+    flex: 1;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-h2 {
-
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-    text-align: center;
-    background-color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-article {
-    position: absolute;
-    top: 300px;
-    text-align: center;
-    opacity: 0.9;
-    background-color: var(--accent2-color);
-}
-
-figure {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-figure img {
-    width: 25%;
-}
-
-.socialmedia a {
+header nav a {
     text-decoration: none;
+    color: white;
 }
 
-.socialmedia a img {
-    width: 5%;
+main {
+    padding: 30px;
 }
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero article {
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-/* contact classes */
-/* #1 Company Info */
 
 .company-info {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-.company-info h3 {
-    font-size: 2.3rem;
+.company-info h1 {
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .company-info p {
-    margin: 4px 0;
-    font-size: 1rem;
+    margin: 5px;
 }
-
-/* #2 Contact Form */
 
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: start;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-.map img {
+/* Google Map */
+
+.map iframe {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 310px;
+    border: 1px solid #ccc;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
+/* Form groups */
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+/* Text boxes */
+
+.form-data input,
+.form-data textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid var(--accent1-color);
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-family: var(--body-font);
 }
 
-contact-form textarea {
-    min-height: 120px;
+/* Message box */
+
+.form-data textarea {
+    height: 100px;
     resize: vertical;
 }
 
-/* #3 radio buttons */
-
-.radio-group {
+fieldset {
+    border: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
-.radio-group label {
+fieldset legend {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+fieldset label {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.checkbox {
+.checkbox-group label {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .contact-form button {
-    background: #fff;
+    padding: 10px;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    padding: 12px;
+    border-radius: 4px;
     font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #264653;
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--accent1-color);
+}
+
+/* Employee cards */
+
+.employee-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* Employee pictures */
+
+.employee-cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.employee-cards figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
 }
