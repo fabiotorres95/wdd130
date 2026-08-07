@@ -214,3 +214,18 @@ footer p {
 .socialmedia img {
     width: 30px;
 }
+
+/* Index CSS */
+
+.index-main {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero-title {
+    position: absolute;
+
+}
